@@ -46,8 +46,91 @@
                         <button class="filter-btn"><i class="fa-solid fa-filter"></i><span>Lọc</span></button>
                     </form>
                 </div>
+                <div class="header-middle-right">
+                    <div class="header-middle-right-list">
+                        <li class="header-middle-right-item dnone open" onclick="openSearchMb()">
+                            <div class="cart-icon-menu">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </li>
+                        <li class="header-middle-right-item close">
+                            <div class="cart-icon-menu">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </li>
+                        <li class="header-middle-right-item dropdown open">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="auth-container">
+                                <span class="text-dndk">Đăng Nhập / Đăng Ký</span>
+                                <span class="text-tk">Tài Khoản <i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul class="header-middle-right-menu">
+                                <li><a id="login" href="javascript:;"><i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng Nhập</a></li>
+                                <li><a id="signup" href="javascripts:;"><i class="fa-solid fa-user-plus"></i> Đăng Ký</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-middle-right-item open" onclick="openCart()">
+                            <div class="cart-icon-menu">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <span class="count-product-cart">0</span>
+                            </div>
+                            <span>Giỏ Hàng</span>
+                        </li>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+    <nav class="header-bottom">
+        <div class="container">
+            <ul class="menu-list">
+                <li class="menu-list-item"><a href="" class="menu-link">Trang Chủ</a></li>
+                <li class="menu-list-item" onclick="showCategory('Hành Động')"><a href="javascript:;" class="menu-link">Hành Động</a></li>
+                <li class="menu-list-item" onclick="showCategory('Phiêu Lưu')"><a href="javascript:;" class="menu-link">Phiêu Lưu</a></li>
+                <li class="menu-list-item" onclick="showCategory('Nhập Vai')"><a href="javascript:;" class="menu-link">Nhập Vai</a></li>
+                <li class="menu-list-item" onclick="showCategory('Thể Thao')"><a href="javascript:;" class="menu-link">Thể Thao</a></li>
+                <li class="menu-list-item" onclick="showCategory('Chiến Thuật')"><a href="javascript:;" class="menu-link">Chiến Thuật</a></li>
+                <li class="menu-list-item" onclick="showCategory('Giải Đố')"><a href="javascript:;" class="menu-link">Giải Đố</a></li>
+                <li class="menu-list-item" onclick="showCategory('Game Khác')"><a href="javascript:;" class="menu-link">Game khác</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="advanced-search">
+        <div class="container">
+            <div class="advanced-search-category">
+                <span>Phân Loại</span>
+                <select name="" id="advanced-search-category-select" onchange="searchProducts()">
+                    <option>Tất cả</option>
+                    <option>Game Kinh Dị</option>
+                    <option>Game Hành Động</option>
+                    <option>Game Phiêu Lưu</option>
+                    <option>Game Chiến Thuật</option>
+                    <option>Game FPS</option>
+                    <option>Game Khác</option>
+                </select>
+            </div>
+            <div class="advanced-search-price">
+                <span>Giá từ</span>
+                <input type="number" placeholder="tối thiểu..." id="min-price" onchange="searchProducts()">
+                <span>đến</span>
+                <input type="number" placeholder="tối đa..." id="max-price" onchange="searchProducts()">
+                <button id="advanced-search-price-btn"><i class="fa-solid fa-magnifying-glass-dollar"></i></button>
+            </div>
+            <div class="advanced-search-control">
+                <button id="sort-ascending" onclick="searchProducts(1)"><i class="fa-solid fa-arrow-up-short-wide"></i></button>
+                <button id="sort-descending" onclick="searchProducts(2)"><i class="fa-solid fa-arrow-down-short-wide"></i></button>
+                <button id="reset-search" onclick="searchProducts(0)"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                <button onclick="closeSearchAdvanced()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
+    <main class="main-wrapper">
+        <div class="container" id="trangchu">
+            <div class="home-slider">
+                <img src="assets/img/banner.png" alt="">
+            </div>
+            
+        </div>
+    </main>
 </body>
 </html>
