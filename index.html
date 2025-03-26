@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="./css/admin-responsive.css">
     <link rel="stylesheet" href="./css/home-responsive.css">
     <link rel="stylesheet" href="./css/toast-message.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css" />
     <title>Comic Game Universe</title>
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -42,7 +44,8 @@
                 <div class="header-middle-center">
                     <form action="" class="form-search">
                         <span class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="from-search-input" placeholder="Tìm kiếm trò chơi..." oninput="searchProducts()">
+                        <input type="text" class="from-search-input" placeholder="Tìm kiếm trò chơi..."
+                            oninput="searchProducts()">
                         <button class="filter-btn"><i class="fa-solid fa-filter"></i><span>Lọc</span></button>
                     </form>
                 </div>
@@ -65,8 +68,10 @@
                                 <span class="text-tk">Tài Khoản <i class="fa-solid fa-caret-down"></i></span>
                             </div>
                             <ul class="header-middle-right-menu">
-                                <li><a id="login" href="javascript:;"><i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng Nhập</a></li>
-                                <li><a id="signup" href="javascripts:;"><i class="fa-solid fa-user-plus"></i> Đăng Ký</a></li>
+                                <li><a id="login" href="javascript:;"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                        Đăng Nhập</a></li>
+                                <li><a id="signup" href="javascripts:;"><i class="fa-solid fa-user-plus"></i> Đăng
+                                        Ký</a></li>
                             </ul>
                         </li>
                         <li class="header-middle-right-item open" onclick="openCart()">
@@ -85,13 +90,20 @@
         <div class="container">
             <ul class="menu-list">
                 <li class="menu-list-item"><a href="" class="menu-link">Trang Chủ</a></li>
-                <li class="menu-list-item" onclick="showCategory('Hành Động')"><a href="javascript:;" class="menu-link">Hành Động</a></li>
-                <li class="menu-list-item" onclick="showCategory('Phiêu Lưu')"><a href="javascript:;" class="menu-link">Phiêu Lưu</a></li>
-                <li class="menu-list-item" onclick="showCategory('Nhập Vai')"><a href="javascript:;" class="menu-link">Nhập Vai</a></li>
-                <li class="menu-list-item" onclick="showCategory('Thể Thao')"><a href="javascript:;" class="menu-link">Thể Thao</a></li>
-                <li class="menu-list-item" onclick="showCategory('Chiến Thuật')"><a href="javascript:;" class="menu-link">Chiến Thuật</a></li>
-                <li class="menu-list-item" onclick="showCategory('Giải Đố')"><a href="javascript:;" class="menu-link">Giải Đố</a></li>
-                <li class="menu-list-item" onclick="showCategory('Game Khác')"><a href="javascript:;" class="menu-link">Game khác</a></li>
+                <li class="menu-list-item" onclick="showCategory('Hành Động')"><a href="javascript:;"
+                        class="menu-link">Hành Động</a></li>
+                <li class="menu-list-item" onclick="showCategory('Phiêu Lưu')"><a href="javascript:;"
+                        class="menu-link">Phiêu Lưu</a></li>
+                <li class="menu-list-item" onclick="showCategory('Nhập Vai')"><a href="javascript:;"
+                        class="menu-link">Nhập Vai</a></li>
+                <li class="menu-list-item" onclick="showCategory('Thể Thao')"><a href="javascript:;"
+                        class="menu-link">Thể Thao</a></li>
+                <li class="menu-list-item" onclick="showCategory('Chiến Thuật')"><a href="javascript:;"
+                        class="menu-link">Chiến Thuật</a></li>
+                <li class="menu-list-item" onclick="showCategory('Giải Đố')"><a href="javascript:;"
+                        class="menu-link">Giải Đố</a></li>
+                <li class="menu-list-item" onclick="showCategory('Game Khác')"><a href="javascript:;"
+                        class="menu-link">Game khác</a></li>
             </ul>
         </div>
     </nav>
@@ -117,9 +129,12 @@
                 <button id="advanced-search-price-btn"><i class="fa-solid fa-magnifying-glass-dollar"></i></button>
             </div>
             <div class="advanced-search-control">
-                <button id="sort-ascending" onclick="searchProducts(1)"><i class="fa-solid fa-arrow-up-short-wide"></i></button>
-                <button id="sort-descending" onclick="searchProducts(2)"><i class="fa-solid fa-arrow-down-short-wide"></i></button>
-                <button id="reset-search" onclick="searchProducts(0)"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                <button id="sort-ascending" onclick="searchProducts(1)"><i
+                        class="fa-solid fa-arrow-up-short-wide"></i></button>
+                <button id="sort-descending" onclick="searchProducts(2)"><i
+                        class="fa-solid fa-arrow-down-short-wide"></i></button>
+                <button id="reset-search" onclick="searchProducts(0)"><i
+                        class="fa-solid fa-arrow-rotate-right"></i></button>
                 <button onclick="closeSearchAdvanced()"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
@@ -177,31 +192,78 @@
                         <form action="" class="info-user">
                             <div class="form-group">
                                 <label for="infoname" class="form-label">Họ Và Tên</label>
-                                <input type="text" class="form-control" name="infoname" id="infophone" disabled="true" placeholder="">
+                                <input type="text" class="form-control" name="infoname" id="infophone" disabled="true"
+                                    placeholder="">
                             </div>
                             <div class="form-group">
                                 <label for="infoemail" class="form_label">Số Điện Thoại</label>
-                                <input type="text" class="form-control" name="infophone" id="infophone" disabled="true" placeholder="">
+                                <input type="text" class="form-control" name="infophone" id="infophone" disabled="true"
+                                    placeholder="">
                             </div>
                             <div class="form-group">
                                 <label for="infoemail" class="form-label">Email</label>
-                                <input type="text" class="form-control" name="infoemail" id="infoemail" placeholder="Thêm địa chỉ email của bạn...">
+                                <input type="text" class="form-control" name="infoemail" id="infoemail"
+                                    placeholder="Thêm địa chỉ email của bạn...">
                                 <span class="inforemail-error form-message"></span>
                             </div>
                             <div class="form-group">
                                 <label for="infoaddress" class="form-label">Địa Chỉ</label>
-                                <input type="text" class="form-control" name="infoaddress" id="inforaddress" placeholder="Thêm Địa Chỉ của bạn...">
+                                <input type="text" class="form-control" name="infoaddress" id="inforaddress"
+                                    placeholder="Thêm Địa Chỉ của bạn...">
                             </div>
                         </form>
                     </div>
                     <div class="main-account-body-col">
                         <form action="" class="change-password">
-                            
+                            <div class="form-group">
+                                <label for="" class="form-label w60">Mật khẩu hiện tại</label>
+                                <input type="password" class="form-control" name="" id="password-cur-info"
+                                    placeholder="Nhập Mật Khẩu Hiện Tại">
+                                <span class="password-cur-info-error form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label w60">Mật khẩu mới</label>
+                                <input type="password" class="form-control" name="" id="password-after-info"
+                                    placeholder="Nhập Mật Khẩu Mới">
+                                <span class="password-after-info-error form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="from-label w60">Xác Nhận Mật Khẩu Mới</label>
+                                <input type="password" class="for-control" name="" id="password-confirm-info"
+                                    placeholder="Nhập lại Mật Khẩu Mới">
+                                <span class="password-after-confirm-error form-message"></span>
+                            </div>
                         </form>
                     </div>
+                    <div class="main-account-body-row">
+                        <div>
+                            <button id="save-info-user" onclick="changeInformation()">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                Lưu Thay Đổi
+                            </button>
+                        </div>
+                        <div>
+                            <button id="save-password" onclick="changePassword()">
+                                <i class="fa-solid fa-key"></i>
+                                Đổi Mật Khẩu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="order-history">
+            <div class="main-account">
+                <div class="main-account-header">
+                    <h3>Quản Lý Mã Đơn Hàng Của Game</h3>
+                    <p>Xem Chi Tiết, Trang Thái Đơn Hàng</p>
+                </div>
+                <div class="main-account-body">
+                    <div class="order-history-section"></div>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
